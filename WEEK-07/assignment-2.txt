@@ -1,0 +1,30 @@
+Apply the simple BCNF procedure to define BCNF tables using the FD list Table 2. 
+You should show
+the tables, columns, primary key of each table, foreign keys, and unique constraints.
+
+
+PatNo → PatAge
+PatZip9 → PatCity
+VisitNo → VisitDate
+PatNo → PatZip9
+ProvNo → ProvSpecialty
+VisitNo → PatNo
+VisitNo, ProvNo → Diagnosis
+ProvNo → ProvEmail
+ProvEmail → ProvNo
+							
+								//	==========	SOLUTION	========== //
+								
+									●
+									List of FDs
+									PatNo → PatAge, PatZip
+									PatZip → PatCity
+									VisitNo → PatNo, VisitDate
+									ProvNo→ ProvSpecialty, ProvEmail
+									ProvNo, VisitNo → Diagnosis
+
+
+
+
+
+

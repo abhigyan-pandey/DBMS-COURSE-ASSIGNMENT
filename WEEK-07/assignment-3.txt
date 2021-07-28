@@ -1,0 +1,50 @@
+Problem 3:
+Determine if the ​
+Student​
+, ​
+Lender​
+, and ​
+Institution​
+tables are in BCNF. In the ​
+Lender​
+table,
+LenderName is unique. In the ​
+Institution​
+table, InstName is unique. In the ​
+Student​
+table, StdEmail is unique.
+Student​ ( ​
+StdNo​
+, StdName, StdEmail, StdAddress, StdCity, StdState, StdZip )
+Lender ​
+( ​
+LenderNo​
+, LenderName)
+Institution ​
+( ​
+InstNo​
+, InstName, InstMascot)
+
+
+								//		SOLUTION 	//
+								
+								●
+								the Student table: The dependencies between ​ StdNo​ and ​StdEmail​ violate BCNF. Both ​ StdNo​  and StdEmail​ are determinants Student​ ( ​StdNo​ , StdName, StdEmail, StdAddress, StdCity, StdState, StdZip )  UNIQUE(StdEmail)
+
+The Institution table:
+The dependencies between ​
+InstNo​
+and ​
+InstName​
+violate BCN
+Institution ​
+( ​
+InstNo​
+, InstName, InstMascot)
+UNIQUE(InstName)
+●
+The lender table:
+Lender ​
+( ​
+LenderNo​
+, LenderName

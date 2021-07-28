@@ -1,0 +1,27 @@
+Problem 1:
+You should identify insertion, update, and deletion anomalies in the sample rows of the big patient
+table shown in Table 1.
+VisitNo VisitDate PatNo PatAge
+PatCity
+PatZip
+ProvNo
+ProvSpecialty
+Diagnosis
+V10021 2/13/2015 P1 36 DENVER 80217 D1 INTERNIST EAR INFECTION
+V10021 2/13/2015 P1 36 DENVER 80217 D2 NURSE PRACTITIONER INFLUENZA
+V93030 2/20/2015 P3 17 ENGLEWOO
+D 80113 D2 NURSE PRACTITIONER PREGNANCY
+V82110 2/18/2015 P2 60 BOULDER 85932 D3 CARDIOLOGIST MURMUR
+
+
+						//	================== 	SOLUTION	======================		//
+						
+						* In this table the primary key is the combination of VisitNo and  ProvNo column
+						
+	(1.)Updation Anamoly -->>  There will occur an updation anamoly if we want to change the ProvSpeciality beacause 
+				    we will need to change all the rows which will be having the same doctor ,that's why 
+				    time complexity will increase in updation.
+	
+	(2.)Deletion Anamoly -->> If we want to delete a patient detail from the table then , that doctor details will also
+				   be deleted from the table.				    	
+						 
